@@ -1,0 +1,8 @@
+version: 1
+jobs:
+  build:
+    docker:
+      - image: reactcommunity/node-ci:8.4.0-0
+    steps:
+      - checkout
+      - run: echo "hello world"
